@@ -11,7 +11,7 @@ In order to use MSP430 based platforms you need to install the gcc-msp430 packag
 Clone the Contiki GitHub repository to a local directory:
 
 ```sh
-git clone **url-contiki-repository**
+git clone 'url-contiki-repository'
 ```
 
 Once cloned, run:
