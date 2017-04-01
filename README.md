@@ -5,9 +5,9 @@ Setting up the Contiki toolchain in Arch Linux is a *2 step process*. Step 1 is 
 one of Contiki's dependencies can be installed from Arch Linux's official repositories (core, extra, community, multilib). The *one package...* (see bellow).
 
 ## gcc-msp430 a.k.a. mspgcc-ti (aur package)
-In order to use MSP430 based platforms you need to install the gcc-msp430 package **VERSION <= 4.7.x** (In this guide 4.7.2 was used) which is available in *Ubuntu*. Arch has its equivalent, *package mspgcc-ti* from the aur repository, which is essentially the installer that Texas Instruments has in its website (you can verify this by comparing the line:
+In order to use MSP430 based platforms you need to install the gcc-msp430 package **VERSION <= 4.7.x** (version used in this guide: 4.7.2) which is available in *Ubuntu*. Arch has *package mspgcc-ti* from the aur which contains *msp430-elf-gcc*. This package is essentially the GNU toolchain for the Texas Instruments msp430 embedded processors that TI has in its website (you can verify the version by comparing the line:
 `_installer=msp430-gcc-full-linux-installer-x.x.x.xx.run`
-from the PKGBUILD with the version that Texas Instruments has in its *website* <http://software-dl.ti.com/msp430/msp430_public_sw/mcu/msp430/MSPGCC/latest/index_FDS.html>). Unfortunately, *mspgcc-ti* **doesn't work** with Contiki. Although, you can find in **this** repository the mspgcc-4.7.2 precompiled.
+from the PKGBUILD with the version number that Texas Instruments has in its *website* <http://software-dl.ti.com/msp430/msp430_public_sw/mcu/msp430/MSPGCC/latest/index_FDS.html>). Unfortunately, *mspgcc-ti* **doesn't work** with Contiki. However, you can find in **this** repository the mspgcc-4.7.2 precompiled which works.
 
 ## Step 1
 Clone the Contiki GitHub repository to a local directory:
