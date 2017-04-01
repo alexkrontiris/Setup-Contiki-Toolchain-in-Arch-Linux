@@ -57,13 +57,13 @@ Verify:
 msp430-gcc --version
 ```
 
-An alternate solution would be to create *symbolic links* from the contents of `msp430/` to `/usr/local/`. A script for this purpose will soon be uploaded in **this** repository.
+An alternate solution in case you prefer not to copy the contents of `msp430/` would be to create *symbolic links* from `msp430/*` to `/usr/local/`.
 
 ## DONE
 Try openning a simulation in *cooja* and see if it runs.
 
 ## TROUBLESHOOTING
-If *cooja* fails to open the simulation and outputs an error in the console complaining about the size of `.text` file or something similar, *download* the *contiki.zip* file from **this** repository which contains the contiki directory from Instant Contiki 3.0 and test *cooja* in this version which was the same as the one used in this guide. 
+If *cooja* fails to open the simulation and outputs an error in the console complaining about the size of `.text` file or something similar, download the *contiki.zip* file from **this** repository which contains the contiki directory from Instant Contiki 3.0 and test *cooja* in this version which is the same as the one used in this guide. Don't forget to checkout the submodules (`git submodule update --init`).
 
 ## Tips and tricks
 Instead of doing `cd /path/to/cooja` and then `ant run` each time you run *cooja*, you could create an *alias* in your `.bashrc` like this: `alias cooja='cd /path/to/cooja && ant run'`.
