@@ -54,3 +54,9 @@ An alternative would be to create *symbolic links* from the contents of `msp430/
 
 ## DONE
 Try openning a simulation in *cooja* to test if it compiles.
+
+## TROUBLESHOOTING
+If *cooja* fails to open the simulation and outputs an error in the console complaining about the size of `.text` file or something similar, *download* the *contiki.zip* file from **this** repository which contains the contiki directory from Instant Contiki 3.0 and test *cooja* in this version which was the same as the one used in this guide. 
+
+## Tips and tricks
+Instead of doing `cd /path/to/cooja` and then `ant run` each time you run *cooja*, you could create an *alias* in your `.bashrc` like this: `alias cooja='cd /path/to/cooja && ant run'`.
